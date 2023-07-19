@@ -1,0 +1,147 @@
+@{
+    ViewData["Title"] = "Departmanlar";
+    Layout = "_Layout";
+}
+
+<div id="departments-card" class="card">
+    <div class="card-header">
+        <div class="card-title">
+            <h3><strong>Departmanlar</strong></h3>
+        </div>
+    </div>
+    <div class="card-body">
+        <a asp-controller="InsanKaynaklari" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.InsanKaynaklari</span>
+            <i class="fas fa-inbox"></i> <strong>İnsan Kaynakları</strong> 
+        </a>
+        <a asp-controller="IdariIsler" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.IdariIsler</span>
+            <i class="fas fa-inbox"></i> <strong>İdari İşler</strong>
+        </a>
+        <a asp-controller="Ithalat" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.Ithalat</span>
+            <i class="fas fa-inbox"></i> <strong>İthalat</strong>
+        </a>
+        <a asp-controller="Ihracat" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.Ihracat</span>
+            <i class="fas fa-inbox"></i> <strong>İhracat</strong>
+        </a>
+        <a asp-controller="grafiktasarim" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.GrafikTasarim</span>
+            <i class="fas fa-inbox"></i> <strong>Grafik Tasarım</strong>
+        </a>
+        <a asp-controller="IsSagligiveGuvenligi" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.IsSagligiveGuvenligi</span>
+            <i class="fas fa-inbox"></i> <strong>İş Sağlığı ve Güvenliği</strong>
+        </a>
+        <a asp-controller="muhasebe" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.Muhasebe</span>
+            <i class="fas fa-inbox"></i> <strong>Muhasebe</strong>
+        </a>
+        <a asp-controller="satinalma" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.satinalma</span>
+            <i class="fas fa-inbox"></i> <strong>Satın Alma</strong>
+        </a>
+        <a asp-controller="satisvepazarlama" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.satisvepazarlama</span>
+            <i class="fas fa-inbox"></i> <strong>Satış ve Pazarlama</strong>
+        </a>
+        <a asp-controller="kaliphane" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.Kaliphane</span>
+            <i class="fas fa-inbox"></i> <strong>Kalıphane</strong>
+        </a>
+        <a asp-controller="teknikservis" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.TeknikServis</span>
+            <i class="fas fa-inbox"></i> <strong>Teknik Servis</strong>
+        </a>
+        <a asp-controller="ArGe" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.ArGe</span>
+            <i class="fas fa-inbox"></i> <strong>ArGe</strong>
+        </a>
+        <a asp-controller="uretim" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.uretim</span>
+            <i class="fas fa-inbox"></i> <strong>Üretim</strong>
+        </a>
+        <a asp-controller="kalitekontrol" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.kalitekontrol</span>
+            <i class="fas fa-inbox"></i> <strong>Kalite Kontrol</strong>
+        </a>
+        <a asp-controller="bilgiislem" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.bilgiislem</span>
+            <i class="fas fa-inbox"></i> <strong>Bilgi İşlem</strong>
+        </a>
+        <a asp-controller="disgorev" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.disgorev</span>
+            <i class="fas fa-inbox"></i> <strong>Dış Görev</strong>
+        </a>
+        <a asp-controller="akulumontaj" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.akulumontaj</span>
+            <i class="fas fa-inbox"></i> <strong>Akülü Montaj</strong>
+        </a>
+
+        <a asp-controller="bakimonarim" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.bakimonarim</span>
+            <i class="fas fa-inbox"></i> <strong>Bakım Onarım</strong>
+        </a>
+        <a asp-controller="enjeksiyon" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.enjeksiyon</span>
+            <i class="fas fa-inbox"></i> <strong>Enjeksiyon</strong>
+        </a>
+
+        <a asp-controller="malkabul" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.malkabul</span>
+            <i class="fas fa-inbox"></i> <strong>Mal Kabul</strong>
+        </a>
+        <a asp-controller="mobilya" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.mobilya</span>
+            <i class="fas fa-inbox"></i> <strong>Mobilya</strong>
+        </a>
+
+        <a asp-controller="oyuncakmontaj" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.oyuncakmontaj</span>
+            <i class="fas fa-inbox"></i> <strong>Oyuncak Montaj</strong>
+        </a>
+
+        <a asp-controller="preshane" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.preshane</span>
+            <i class="fas fa-inbox"></i> <strong>Preshane</strong>
+        </a>
+
+        <a asp-controller="sevkiyatdepo" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.sevkiyatdepo</span>
+            <i class="fas fa-inbox"></i> <strong>Sevkiyat Depo</strong>
+        </a>
+
+        <a asp-controller="sisirme" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.sisirme</span>
+            <i class="fas fa-inbox"></i> <strong>Şişirme</strong>
+        </a>
+
+        <a asp-controller="planlama" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.planlama</span>
+            <i class="fas fa-inbox"></i> <strong>Planlama</strong>
+        </a>
+
+        <a asp-controller="yarimamuldepo" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.yarimamuldepo</span>
+            <i class="fas fa-inbox"></i> <strong>Yarı Mamul Depo</strong>
+        </a>
+
+        <a asp-controller="yemekhane" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.yemekhane</span>
+            <i class="fas fa-inbox"></i> <strong>Yemekhane</strong>
+        </a>
+
+        <a asp-controller="pilsanstore" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.pilsanstore</span>
+            <i class="fas fa-inbox"></i> <strong>Pilsanstore</strong>
+        </a>
+
+        <a asp-controller="guvenlik" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.guvenlik</span>
+            <i class="fas fa-inbox"></i> <strong>Güvenlik</strong>
+        </a>
+
+
+    </div>
+</div>

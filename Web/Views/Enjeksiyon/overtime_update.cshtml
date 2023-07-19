@@ -1,0 +1,162 @@
+@using Core.Constant
+@model Web.Models.OvertimeVM
+@{
+    string DepartmentsText = "Enjeksiyon";
+    string ControllerText = "enjeksiyon";
+
+    var firstDay = new DateTime(DateTime.Now.Year, 1, 1);
+    var firstDate = firstDay.AddDays((WeekOfDay.WeekNow * 7) + 1).ToShortDateString();
+    var lastDate = firstDay.AddDays((WeekOfDay.WeekNow * 7) + 6).ToShortDateString();
+
+    var day = "";
+
+    if (Model.Date == null)
+    {
+        day = WeekOfDay.dayNow;
+    }
+    else
+    {
+        day = Model.Date;
+    }
+}
+@{
+    ViewData["Title"] = "" + @DepartmentsText + " - " + @day
+            + " Personel Mesai Güncelleme | " + (@firstDate) + " - " + (@lastDate) + "";
+    Layout = "_Layout";
+}
+
+
+<form asp-controller="@ControllerText" asp-action="overtime_update" method="post">
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title col-8 float-left">
+                <h5>
+                    <strong>
+                        @ViewData["Title"]
+                    </strong>
+                </h5>
+            </div>
+            <div class="col-4 float-left">
+                @if (Model.Date == null)
+                {
+                    <input asp-for="@Model.Date" name="overtimeupdate_date" value="@WeekOfDay.dayNow"
+                    id="overtimeupdate_datepicker" type="text"
+                    class="form-control form-control-sm text-center float-right mr-2">
+                }
+                else
+                {
+                    <input asp-for="@Model.Date" name="overtimeupdate_date" value="@Model.Date"
+                    id="overtimeupdate_datepicker" type="text"
+                    class="form-control form-control-sm text-center float-right mr-2">
+                }
+
+            </div>
+        </div>
+        <div class="card-body">
+            <table id="departments-add-table" class="table">
+                <thead>
+                    <tr>
+                        <th>Personel Ad Soyad</th>
+                        <th>Bölüm</th>
+                        <th>Servis</th>
+                        <th>Durak</th>
+                        <th>Mesai</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.DepartmentsPersonelDto.Count(); i++)
+                    {
+                        <tr>
+                            <td>@Model.DepartmentsPersonelDto[i].Name @Model.DepartmentsPersonelDto[i].Surname</td>
+                            <td>@Model.DepartmentsPersonelDto[i].DepartmentName</td>
+                            <td>@Model.DepartmentsPersonelDto[i].ServiceName</td>
+                            <td>@Model.DepartmentsPersonelDto[i].StationName</td>
+                            <input hidden asp-for="@Model.DepartmentsPersonelDto[i].RegisterNo"
+                            value="@Model.DepartmentsPersonelDto[i].RegisterNo">
+                            <input hidden asp-for="@Model.DepartmentsPersonelDto[i].OvertimeDay"
+                            value="@Model.DepartmentsPersonelDto[i].OvertimeDay">
+                            <td class="text-center">
+                                @if (@Model.DepartmentsPersonelDto[i].ShiftId == 1)
+                                {
+
+                                    <select asp-for="@Model.DepartmentsPersonelDto[i].OvertimeId"
+                                class="form-control form-control-sm text-center">
+                                        <option selected disabled value="0">* Mesai Seçin *</option>
+                                        <option value="2">16:00 - 18:00</option>
+                                        <option value="3">16:00 - 20:00</option>
+                                        <option value="4">16:00 - 22:00</option>
+                                        <option value="5">16:00 - 24:00</option>
+                                        <option value="6">00:00 - 08:00</option>
+                                        <option value="8">05:00 - 08:00</option>
+                                    </select>
+                                }
+                                @if (@Model.DepartmentsPersonelDto[i].ShiftId == 2)
+                                {
+                                    <select asp-for="@Model.DepartmentsPersonelDto[i].OvertimeId"
+                                class="form-control form-control-sm text-center">
+                                        <option selected disabled value="0">* Mesai Seçin *</option>
+                                        <option value="3">16:00 - 20:00</option>
+                                        <option value="4">16:00 - 22:00</option>
+                                        <option value="5">16:00 - 24:00</option>
+                                        <option value="6">00:00 - 08:00</option>
+                                        <option value="8">05:00 - 08:00</option>
+                                    </select>
+                                }
+                                @if (@Model.DepartmentsPersonelDto[i].ShiftId == 5)
+                                {
+                                    <select asp-for="@Model.DepartmentsPersonelDto[i].OvertimeId"
+                                class="form-control form-control-sm text-center">
+                                        <option selected disabled value="0">* Mesai Seçin *</option>
+                                        <option value="6">00:00 - 08:00</option>
+                                    </select>
+                                }
+                                @if (@Model.DepartmentsPersonelDto[i].ShiftId == 6)
+                                {
+                                    <select asp-for="@Model.DepartmentsPersonelDto[i].OvertimeId"
+                                class="form-control form-control-sm text-center">
+                                        <option selected disabled value="0">* Mesai Seçin *</option>
+                                        <option value="1">08:00 - 16:00</option>
+                                    </select>
+                                }
+                            </td>
+                        </tr>
+                    }
+                    @foreach (var item in Model.DepartmentsPersonelDto)
+                    {
+
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Personel Ad Soyad</th>
+                        <th>Bölüm</th>
+                        <th>Servis</th>
+                        <th>Durak</th>
+                        <th>Mesai</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-warning float-right"><i
+                    class="fa-solid fa-arrows-rotate fa-fade mr-2"></i> Güncelle</button>
+        </div>
+    </div>
+
+</form>
+
+<form hidden asp-controller="@ControllerText" asp-action="overtime_update" method="get">
+
+    @if (Model.Date == null)
+    {
+        <input name="overtimeupdate_date_input" value="@WeekOfDay.dayNow" id="overtimeupdate_datepicker2" type="text"
+        class="form-control form-control-sm text-center float-right mr-2">
+    }
+    else
+    {
+        <input name="overtimeupdate_date_input" value="@Model.Date" id="overtimeupdate_datepicker2" type="text"
+        class="form-control form-control-sm text-center float-right mr-2">
+    }
+    <button hidden id="overtimeupdate-form-button" type="submit">Test</button>
+
+</form>

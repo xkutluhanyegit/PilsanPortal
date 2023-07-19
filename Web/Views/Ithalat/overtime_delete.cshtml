@@ -1,0 +1,121 @@
+@using Core.Constant
+@model Web.Models.OvertimeVM
+@{
+    string DepartmentsText = "İthalat";
+    string ControllerText = "Ithalat";
+
+    var firstDay = new DateTime(DateTime.Now.Year, 1, 1);
+    var firstDate = firstDay.AddDays((WeekOfDay.WeekNow * 7) + 1).ToShortDateString();
+    var lastDate = firstDay.AddDays((WeekOfDay.WeekNow * 7) + 6).ToShortDateString();
+
+    var day = "";
+
+    if (Model.Date == null)
+    {
+        day = WeekOfDay.dayNow;
+    }
+    else
+    {
+        day = Model.Date;
+    }
+}
+@{
+    ViewData["Title"] = "" + @DepartmentsText + " - " + @day
+            + " Personel Mesai Delete | " + (@firstDate) + " - " + (@lastDate) + "";
+    Layout = "_Layout";
+}
+
+
+<form asp-controller="@ControllerText" asp-action="overtime_delete" method="post">
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title col-8 float-left">
+                <h5>
+                    <strong>
+                        @ViewData["Title"]
+                    </strong>
+                </h5>
+            </div>
+            <div class="col-4 float-left">
+                @if (Model.Date == null)
+                {
+                    <input asp-for="@Model.Date" name="overtimedelete_date" value="@WeekOfDay.dayNow"
+                    id="overtimedelete_datepicker" type="text"
+                    class="form-control form-control-sm text-center float-right mr-2">
+                }
+                else
+                {
+                    <input asp-for="@Model.Date" name="overtimedelete_date" value="@Model.Date"
+                    id="overtimedelete_datepicker" type="text"
+                    class="form-control form-control-sm text-center float-right mr-2">
+                }
+
+            </div>
+        </div>
+        <div class="card-body">
+            <table id="departments-add-table" class="table">
+                <thead>
+                    <tr>
+                        <th style="max-width: 50px;" class="text-center">Seç</th>
+                        <th>Personel Ad Soyad</th>
+                        <th>Bölüm</th>
+                        <th>Servis</th>
+                        <th>Durak</th>
+                        <th>Mesai</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.DepartmentsPersonelDto.Count(); i++)
+                    {
+                        <tr>
+                            <td style="max-width: 50px;" class="text-center">
+                                @Html.CheckBoxFor(m=>Model.DepartmentsPersonelDto[i].check)</td>
+                            <td>@Model.DepartmentsPersonelDto[i].Name @Model.DepartmentsPersonelDto[i].Surname</td>
+                            <td>@Model.DepartmentsPersonelDto[i].DepartmentName</td>
+                            <td>@Model.DepartmentsPersonelDto[i].ServiceName</td>
+                            <td>@Model.DepartmentsPersonelDto[i].StationName</td>
+                            <input hidden asp-for="@Model.DepartmentsPersonelDto[i].RegisterNo"
+                            value="@Model.DepartmentsPersonelDto[i].RegisterNo">
+                            <td>@Model.DepartmentsPersonelDto[i].OvertimeName</td>
+                        </tr>
+                    }
+                    @foreach (var item in Model.DepartmentsPersonelDto)
+                    {
+
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th style="max-width: 50px;" class="text-center">Seç</th>
+                        <th>Personel Ad Soyad</th>
+                        <th>Bölüm</th>
+                        <th>Servis</th>
+                        <th>Durak</th>
+                        <th>Mesai</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-danger float-right"><i class="fa-solid fa-trash fa-fade mr-2"></i>
+                Sil</button>
+        </div>
+    </div>
+
+</form>
+
+<form hidden asp-controller="@ControllerText" asp-action="overtime_delete" method="get">
+
+    @if (Model.Date == null)
+    {
+        <input name="overtimedelete_date_input" value="@WeekOfDay.dayNow" id="overtimedelete_datepicker2" type="text"
+        class="form-control form-control-sm text-center float-right mr-2">
+    }
+    else
+    {
+        <input name="overtimedelete_date_input" value="@Model.Date" id="overtimedelete_datepicker2" type="text"
+        class="form-control form-control-sm text-center float-right mr-2">
+    }
+    <button hidden id="overtimedelete-form-button" type="submit">Test</button>
+
+</form>

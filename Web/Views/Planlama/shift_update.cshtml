@@ -1,0 +1,83 @@
+@using Core.Constant
+@{
+    string DepartmentsText = "Planlama";
+    string ControllerText = "planlama";
+
+    var firstDay = new DateTime(DateTime.Now.Year, 1, 1);
+    var firstDate = firstDay.AddDays((WeekOfDay.WeekNow * 7) + 1).ToShortDateString();
+    var lastDate = firstDay.AddDays((WeekOfDay.WeekNow * 7) + 6).ToShortDateString();
+}
+
+@{
+    ViewData["Title"] = "" + @DepartmentsText + " - " + @WeekOfDay.WeekNow + ". Hafta Personel Vardiya Güncelleme | " +
+            (@firstDate)
+            + " - " + (@lastDate) + "";
+    Layout = "_Layout";
+}
+@model Web.Models.DepartmentsPersonelShiftsVM
+
+<form asp-controller="@ControllerText" asp-action="shift_update" method="post">
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title col-8 float-left">
+                <h5>
+                    <strong>@ViewData["Title"]</strong>
+                </h5>
+            </div>
+        </div>
+        <div class="card-body">
+            <table id="departments-add-table" class="table">
+                <thead>
+                    <th>Personel Ad Soyad</th>
+                    <th>Bölüm</th>
+                    <th>Servis</th>
+                    <th>Durak</th>
+                    <th>Vardiya</th>
+
+
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.DepartmentsPersonelDtoVM.Count(); i++)
+                    {
+                        <tr>
+                            <td>@Model.DepartmentsPersonelDtoVM[i].Name @Model.DepartmentsPersonelDtoVM[i].Surname</td>
+                            <td>@Model.DepartmentsPersonelDtoVM[i].DepartmentName</td>
+                            <td>@Model.DepartmentsPersonelDtoVM[i].ServiceName</td>
+                            <td>@Model.DepartmentsPersonelDtoVM[i].StationName</td>
+                            <input hidden asp-for="@Model.DepartmentsPersonelDtoVM[i].RegisterNo"
+                            value="@Model.DepartmentsPersonelDtoVM[i].RegisterNo">
+                            <input hidden asp-for="@Model.DepartmentsPersonelDtoVM[i].ShiftWeek"
+                            value="@Model.DepartmentsPersonelDtoVM[i].ShiftWeek">
+                            <td>
+                                <select asp-for="@Model.DepartmentsPersonelDtoVM[i].ShiftId"
+                                class="form-control form-control-sm text-center">
+                                    <option selected value="@Model.DepartmentsPersonelDtoVM[i].ShiftId">*
+                                        @Model.DepartmentsPersonelDtoVM[i].ShiftName *</option>
+                                    @for (int z = 0; z < Model.Shifts.Count(); z++)
+                                    {
+                                        <option value="@Model.Shifts[z].Shiftid">@Model.Shifts[z].Shiftname</option>
+                                    }
+                                </select>
+                            </td>
+                        </tr>
+                    }
+                    @foreach (var item in Model.DepartmentsPersonelDtoVM)
+                    {
+
+                    }
+                </tbody>
+                <tfoot>
+                    <th>Personel Ad Soyad</th>
+                    <th>Bölüm</th>
+                    <th>Servis</th>
+                    <th>Durak</th>
+                    <th>Vardiya</th>
+                </tfoot>
+            </table>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-warning float-right"><i
+                    class="fa-solid fa-arrows-rotate fa-fade mr-2"></i> Güncelle</button>
+        </div>
+    </div>
+</form>

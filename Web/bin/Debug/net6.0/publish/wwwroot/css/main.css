@@ -1,0 +1,30 @@
+#departments-card a {
+    width: 10%;
+    height: 70px;
+}
+
+#datepicker {
+    max-width: 180px;
+}
+
+#overtimeadd_datepicker {
+    max-width: 180px;
+}
+
+#overtimeupdate_datepicker {
+    max-width: 180px;
+}
+
+#overtimedelete_datepicker {
+    max-width: 180px;
+}
+
+.table-station tr {
+    cursor: pointer;
+}
+
+.hiddenRow {
+    padding: 0 4px !important;
+    background-color: #eeeeee;
+    font-size: 13px;
+}

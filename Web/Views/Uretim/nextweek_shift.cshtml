@@ -1,0 +1,65 @@
+@using Core.Constant
+@{
+    string DepartmentsText = "Üretim";
+    string ControllerText = "uretim";
+
+    var firstDay = new DateTime(DateTime.Now.Year, 1, 1);
+    var firstDate = firstDay.AddDays((WeekOfDay.WeekNext * 7) + 1).ToShortDateString();
+    var lastDate = firstDay.AddDays((WeekOfDay.WeekNext * 7) + 6).ToShortDateString();
+}
+@{
+    ViewData["Title"] = "" +@DepartmentsText+ " - " +@WeekOfDay.WeekNext + ". Hafta Personel Vardiya Listesi | " + (@firstDate) + " - " + (@lastDate) + "";
+    Layout = "_Layout";
+}
+@model List<Entities.Dto.DepartmentsPersonelDto>
+<div class="card">
+    <div class="card-header">
+        <div class="card-title col-8 float-left">
+            <h5>
+                <strong>@ViewData["Title"]</strong>
+            </h5>
+        </div>
+        <div class="col-4 float-left">
+            <a asp-controller="@ControllerText" asp-action="nextweek_shift_add"
+                class="btn btn-sm btn-success float-right"><i class="fa-solid fa-plus fa-fade"></i></a>
+            <a asp-controller="@ControllerText" asp-action="nextweek_shift_update" class="btn btn-sm btn-warning float-right mr-2"><i
+                    class="fa-solid fa-arrows-rotate fa-fade"></i></a>
+            <a asp-controller="@ControllerText" asp-action="nextweek_shift_delete" class="btn btn-sm btn-danger float-right mr-2"><i
+                    class="fa-solid fa-trash fa-fade"></i></a>
+        </div>
+    </div>
+    <div class="card-body">
+        <table id="departments-table" class="table">
+            <thead>
+                <th>Personel Ad Soyad</th>
+                <th>Bölüm</th>
+                <th>Servis</th>
+                <th>Durak</th>
+                <th>Vardiya</th>
+                <th>imza</th>
+
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Name @item.Surname</td>
+                        <td>@item.DepartmentName</td>
+                        <td>@item.ServiceName</td>
+                        <td>@item.StationName</td>
+                        <td>@item.ShiftName</td>
+                        <th></th>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <th>Personel Ad Soyad</th>
+                <th>Bölüm</th>
+                <th>Servis</th>
+                <th>Durak</th>
+                <th>Vardiya</th>
+                <th>imza</th>
+            </tfoot>
+        </table>
+    </div>
+</div>

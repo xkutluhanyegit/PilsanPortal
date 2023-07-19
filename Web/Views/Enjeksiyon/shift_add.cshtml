@@ -1,0 +1,84 @@
+@using Core.Constant
+@{
+    string DepartmentsText = "Enjeksiyon";
+    string ControllerText = "enjeksiyon";
+
+    var firstDay = new DateTime(DateTime.Now.Year, 1, 1);
+    var firstDate = firstDay.AddDays((WeekOfDay.WeekNow * 7) + 1).ToShortDateString();
+    var lastDate = firstDay.AddDays((WeekOfDay.WeekNow * 7) + 6).ToShortDateString();
+}
+@{
+    ViewData["Title"] = "" + @DepartmentsText + " - " + @WeekOfDay.WeekNow + ". Hafta Personel Vardiya Ekle | " +
+            (@firstDate)
+            + " - " + (@lastDate) + "";
+            
+    Layout = "_Layout";
+}
+@model Web.Models.DepartmentsPersonelShiftsVM
+
+<form asp-controller="@ControllerText" asp-action="shift_add" method="post">
+
+
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title col float-left">
+                <h5>
+                    <strong>
+                        @ViewData["Title"]
+                    </strong>
+                </h5>
+            </div>
+        </div>
+        <div class="card-body">
+            <table id="departments-add-table" class="table">
+                <thead>
+                    <th hidden>Req</th>
+                    <th>Personel Ad Soyad</th>
+                    <th>Bölüm</th>
+                    <th>Servis</th>
+                    <th>Durak</th>
+                    <th>Vardiya</th>
+
+                </thead>
+                <tbody>
+
+                    @for (int i = 0; i < Model.DepartmentsPersonelDtoVM.Count(); i++)
+                    {
+                        <tr>
+                            <td hidden><input hidden asp-for="@Model.DepartmentsPersonelDtoVM[i].RegisterNo"
+                                value="@Model.DepartmentsPersonelDtoVM[i].RegisterNo"></td>
+                            <td>@Model.DepartmentsPersonelDtoVM[i].Name @Model.DepartmentsPersonelDtoVM[i].Surname</td>
+                            <td>@Model.DepartmentsPersonelDtoVM[i].DepartmentName</td>
+                            <td>@Model.DepartmentsPersonelDtoVM[i].ServiceName</td>
+                            <td>@Model.DepartmentsPersonelDtoVM[i].StationName</td>
+                            <td>
+
+                                <select asp-for="@Model.DepartmentsPersonelDtoVM[i].ShiftId"
+                                class="form-control form-control-sm text-center">
+                                    <option selected disabled value="0">* Vardiya Seçin *</option>
+                                    @for (int z = 0; z < Model.Shifts.Count(); z++)
+                                    {
+                                        <option value="@Model.Shifts[z].Shiftid">@Model.Shifts[z].Shiftname</option>
+                                    }
+                                </select>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <th hidden>Req</th>
+                    <th>Personel Ad Soyad</th>
+                    <th>Bölüm</th>
+                    <th>Servis</th>
+                    <th>Durak</th>
+                    <th>Vardiya</th>
+                </tfoot>
+            </table>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-success float-right"><i class="fa-solid fa-plus fa-fade mr-2"></i>
+                Kaydet</button>
+        </div>
+    </div>
+
+</form>

@@ -1,0 +1,83 @@
+@model List<Entities.Dto.HRPersonelDto>
+@{
+    ViewData["Title"] = "Personel Durak Detay Dağılım Tablosu";
+    Layout = "_Layout";
+}
+
+@{
+    var groupList = Model.GroupBy(p => p.stationName).ToList();
+}
+<div class="card">
+    <div class="card-body">
+        <div style="overflow-x:auto;" class="scrolling-wrapper row flex-row flex-nowrap">
+            @foreach (var item in groupList)
+            {
+                <div class="col-md-2 col-sm-6 col-12">
+                    <div class="info-box bg-gradient-info">
+                        <span class="info-box-icon"><i class="fa-solid fa-map-location-dot fa-fade"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text"><strong>@item.Key</strong></span>
+                            <span class="info-box-number">@item.Count()</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                            <span class="progress-description">
+                                Percent
+                            </span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header"></div>
+    <div class="card-body">
+
+        <table id="station-table" class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Personel Ad Soyad</th>
+                    <th>Personel Servis</th>
+                    <th>Personel Durak</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int sayac = 1;
+                }
+                @foreach (var item in groupList)
+                {
+                    @foreach (var list in item)
+                    {
+                        <tr>
+                            <th>@sayac</th>
+                            <td>
+                                @list.Name @list.Surname
+                            </td>
+                            <td>@list.serviceName</td>
+                            <td>@list.stationName</td>
+                        </tr>
+                        sayac++;
+                    }
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>#</th>
+                    <th>Personel Ad Soyad</th>
+                    <th>Personel Servis</th>
+                    <th>Personel Durak</th>
+                </tr>
+            </tfoot>
+        </table>
+
+    </div>
+</div>

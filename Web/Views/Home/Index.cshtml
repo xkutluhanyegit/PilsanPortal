@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "_Layout";
+}
+
+<div class="container-fluid">
+    <!-- Small boxes (Stat box) -->
+    <div class="row">
+
+        <!-- ./col -->
+        <a asp-controller="humanresource" asp-action="index" class="col-md-3 col-sm-6 col-12">
+            <div>
+                <div class="info-box bg-success">
+                    <span class="info-box-icon"><i class="nav-icon fa-solid fa-users"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-number">İnsan Kaynakları</span>
+                        <span class="info-box-text">@ViewBag.count</span>
+
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 100%"></div>
+                        </div>
+                        <span class="progress-description">
+                            <small>www.pilsan.com.tr</small>
+                        </span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+        </a>
+
+        <a asp-controller="" asp-action="index" class="col-md-3 col-sm-6 col-12">
+            <div>
+                <div class="info-box bg-primary">
+                    <span class="info-box-icon"><i class="nav-icon fa-solid fa-user-gear"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-number">İdari İşler</span>
+                        <span class="info-box-text">.</span>
+
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 100%"></div>
+                        </div>
+                        <span class="progress-description">
+                            <small>www.pilsan.com.tr</small>
+                        </span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+        </a>
+
+        <a asp-controller="departments" asp-action="index" class="col-md-3 col-sm-6 col-12">
+            <div>
+                <div class="info-box bg-dark">
+                    <span class="info-box-icon"><i class="nav-icon fa-solid fa-puzzle-piece"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-number">Departmanlar</span>
+                        <span class="info-box-text">30</span>
+
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 100%"></div>
+                        </div>
+                        <span class="progress-description">
+                            <small>www.pilsan.com.tr</small>
+                        </span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+        </a>
+
+
+    </div>
+    <!-- ./col -->
+</div>
+<!-- /.row -->
+
+</div><!-- /.container-fluid -->

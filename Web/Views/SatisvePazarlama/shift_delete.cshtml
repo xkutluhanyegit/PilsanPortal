@@ -1,0 +1,73 @@
+@using Core.Constant
+@{
+    string DepartmentsText = "Satış ve Pazarlama";
+    string ControllerText = "SatisvePazarlama";
+
+    var firstDay = new DateTime(DateTime.Now.Year, 1, 1);
+    var firstDate = firstDay.AddDays((WeekOfDay.WeekNow * 7) + 1).ToShortDateString();
+    var lastDate = firstDay.AddDays((WeekOfDay.WeekNow * 7) + 6).ToShortDateString();
+}
+
+@{
+    ViewData["Title"] = "" + @DepartmentsText + " - " + @WeekOfDay.WeekNow + ". Hafta Personel Vardiya Silme | " +
+            (@firstDate)
+            + " - " + (@lastDate) + "";
+    Layout = "_Layout";
+}
+
+@model List<Entities.Dto.DepartmentsPersonelDto>
+<form asp-controller="@ControllerText" asp-action="shift_delete" method="post">
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">
+                <h5>
+                    <strong>@ViewData["Title"]</strong>
+                </h5>
+            </div>
+        </div>
+        <div class="card-body">
+            <table id="departments-add-table" class="table">
+                <thead>
+                    <tr>
+                        <th style="max-width: 50px;" class="text-center">Seç</th>
+                        <th>Personel Ad Soyad</th>
+                        <th>Bölüm</th>
+                        <th>Servis</th>
+                        <th>Durak</th>
+                        <th>Vardiya</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.Count(); i++)
+                    {
+                        <tr>
+                            <td style="max-width: 50px;" class="text-center">@Html.CheckBoxFor(m=>Model[i].check)</td>
+                            <td>@Model[i].Name @Model[i].Surname</td>
+                            <td>@Model[i].DepartmentName</td>
+                            <td>@Model[i].ServiceName</td>
+                            <td>@Model[i].StationName</td>
+                            <td>@Model[i].ShiftName</td>
+                            <input hidden type="text" asp-for="@Model[i].RegisterNo" value="@Model[i].RegisterNo">
+                            <input hidden type="text" asp-for="@Model[i].ShiftWeek" value="@Model[i].ShiftWeek">
+                        </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th style="max-width: 50px;" class="text-center">Seç</th>
+                        <th>Personel Ad Soyad</th>
+                        <th>Bölüm</th>
+                        <th>Servis</th>
+                        <th>Durak</th>
+                        <th>Vardiya</th>
+                    </tr>
+
+                </tfoot>
+            </table>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-danger float-right"><i class="fa-solid fa-trash fa-fade mr-2"></i>
+                Sil</button>
+        </div>
+    </div>
+</form>
