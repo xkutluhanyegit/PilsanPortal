@@ -79,6 +79,11 @@
             <i class="fas fa-inbox"></i> <strong>Akülü Montaj</strong>
         </a>
 
+        <a asp-controller="rotasyon" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.rotasyon</span>
+            <i class="fas fa-inbox"></i> <strong>Rotasyon</strong>
+        </a>
+
         <a asp-controller="bakimonarim" asp-action="index" class="btn btn-app">
             <span class="badge bg-teal">@ViewBag.bakimonarim</span>
             <i class="fas fa-inbox"></i> <strong>Bakım Onarım</strong>
@@ -140,6 +145,16 @@
         <a asp-controller="guvenlik" asp-action="index" class="btn btn-app">
             <span class="badge bg-teal">@ViewBag.guvenlik</span>
             <i class="fas fa-inbox"></i> <strong>Güvenlik</strong>
+        </a>
+
+        <a asp-controller="surekliiyilestirme" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.surekliiyilestirme</span>
+            <i class="fas fa-inbox"></i> <strong>Sürekli İyileştirme</strong>
+        </a>
+
+        <a asp-controller="ihracat2" asp-action="index" class="btn btn-app">
+            <span class="badge bg-teal">@ViewBag.ihracat2</span>
+            <i class="fas fa-inbox"></i> <strong>Dış Ticaret</strong>
         </a>
 
 

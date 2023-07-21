@@ -1,0 +1,39 @@
+@{
+    Layout = "_Login";
+}
+@model Web.Models.RolesVM
+<div class="login-box">
+    <!-- /.login-logo -->
+    <div class="card card-outline card-danger">
+        <div class="card-header text-center">
+            <a href="/" class="h1">
+                <a href="/" class="brand-link">
+                    <img style="max-width: 150px;" src="/dist/img/logo.png" class="img-fluid">
+                </a>
+            </a>
+        </div>
+        <div class="card-body">
+            <p class="login-box-msg">Rol Kaydı Ekranı</p>
+
+            <form asp-controller="admin" asp-action="roleCreate" method="post">
+                <div class="input-group mb-3">
+                    <input asp-for="@Model.RolName" type="text" class="form-control" placeholder="Rol Adı">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- /.col -->
+                    <div class="col">
+                        <button type="submit" class="btn btn-danger btn-block">Kaydet</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </form>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+</div>

@@ -56,6 +56,9 @@ namespace Web.Controllers
             ViewBag.yemekhane = _personelService.GetAllDepartmentsPersonelDto(DepartmentsCode.Yemekhane,WeekOfDay.WeekNow,WeekOfDay.dayNow).Data.ToList().Count();
             ViewBag.pilsanstore = _personelService.GetAllDepartmentsPersonelDto(DepartmentsCode.Pilsanstore,WeekOfDay.WeekNow,WeekOfDay.dayNow).Data.ToList().Count();
             ViewBag.guvenlik = _personelService.GetAllDepartmentsPersonelDto(DepartmentsCode.Guvenlik,WeekOfDay.WeekNow,WeekOfDay.dayNow).Data.ToList().Count();
+            ViewBag.surekliiyilestirme = _personelService.GetAllDepartmentsPersonelDto(DepartmentsCode.SurekliIyilestirme,WeekOfDay.WeekNow,WeekOfDay.dayNow).Data.ToList().Count();
+            ViewBag.Ihracat2 = _personelService.GetAllDepartmentsPersonelDto(DepartmentsCode.Ihracat2,WeekOfDay.WeekNow,WeekOfDay.dayNow).Data.ToList().Count();
+            ViewBag.rotasyon = _personelService.GetAllDepartmentsPersonelDto(DepartmentsCode.Rotasyon,WeekOfDay.WeekNow,WeekOfDay.dayNow).Data.ToList().Count();
 
             return View();
         }

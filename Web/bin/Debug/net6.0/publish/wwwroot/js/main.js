@@ -100,6 +100,18 @@ $(document).ready(function () {
         });
     });
 
+    $(function () {
+        $("#station-table").DataTable({
+            "responsive": true,
+            "lengthChange": false,
+            "autoWidth": false,
+            "scrollY": '57vh',
+            "scrollCollapse": true,
+            "paging": false,
+            "buttons": ["excel", "pdf", "print", "colvis"]
+        }).buttons().container().appendTo('#station-table_wrapper .col-md-6:eq(0)');
+    });
+
     $('.accordian-body').on('show.bs.collapse', function () {
         $(this).closest("table-station")
             .find(".collapse.in")

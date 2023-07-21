@@ -5,12 +5,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Business.Abstract;
 using Core.Constant;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace Web.Controllers
 {
     [Route("insan-kaynaklari")]
+    [Authorize(Roles = "IK,Admin")]
     public class HumanResourceController : Controller
     {
         private readonly ILogger<HumanResourceController> _logger;

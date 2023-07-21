@@ -1,25 +1,42 @@
 ﻿using System.Diagnostics;
 using Business.Abstract;
 using Core.Constant;
+using Entities.Concrete;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Web.Models;
 
 namespace Web.Controllers;
 
+
+[Authorize]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
     private readonly IPersonelService _personelService;
+    private readonly UserManager<AppUser> _userManager;
     
 
-    public HomeController(ILogger<HomeController> logger,IPersonelService personelService)
+    public HomeController(ILogger<HomeController> logger,IPersonelService personelService,UserManager<AppUser> userManager)
     {
         _logger = logger;
         _personelService = personelService;
+        _userManager = userManager;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
+        //Create No Form
+        var signupResult = await _userManager.CreateAsync(
+            new()
+            {
+                UserName = "kutluhanyegit@pilsan.com.tr",
+                Email = "kutluhanyegit@pilsan.com.tr",
+            },"helloWorld1991."
+        );
+        
+
         var result = _personelService.GetAllHRPersonelDto(WeekOfDay.WeekNow,WeekOfDay.dayNow);
         if (result.Success)
         {

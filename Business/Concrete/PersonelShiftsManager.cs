@@ -35,7 +35,7 @@ namespace Business.Concrete
                 {
                     p.Startday = ShiftStart.ToShortDateString();
                     //Vardiya
-                    if (p.Shiftid == 1 | p.Shiftid == 5 | p.Shiftid == 6)
+                    if (p.Shiftid == 1 | p.Shiftid == 5 | p.Shiftid == 6 | p.Shiftid == 7)
                     {
                         p.Endday = ShiftStart.AddDays(5).ToShortDateString();
                         break;

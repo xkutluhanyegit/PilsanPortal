@@ -8,13 +8,15 @@ using Business.Constant.DepartmentsCode;
 using Core.Constant;
 using Entities.Concrete;
 using Entities.Dto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Web.Models;
 
 namespace Web.Controllers
 {
-    [Route("girafi-tasarim")]
+    [Route("grafik-tasarim")]
+    [Authorize(Roles = "Admin,Grafik")]
     public class GrafikTasarimController : Controller
     {
         private readonly ILogger<InsanKaynaklariController> _logger;

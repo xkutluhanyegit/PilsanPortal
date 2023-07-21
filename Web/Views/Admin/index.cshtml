@@ -1,0 +1,71 @@
+@{
+    Layout = "_Login";
+}
+@model Web.Models.SignUpVM
+<div class="login-box">
+    <!-- /.login-logo -->
+    <div class="card card-outline card-danger">
+        <div class="card-header text-center">
+            <a href="/" class="h1">
+                <a href="/" class="brand-link">
+                    <img style="max-width: 150px;" src="/dist/img/logo.png" class="img-fluid">
+                </a>
+            </a>
+        </div>
+        <div class="card-body">
+            <p class="login-box-msg">Kullanıcı Kaydı Ekranı</p>
+
+            <form asp-controller="admin" asp-action="index" method="post">
+                <div class="input-group mb-3">
+                    <input asp-for="@Model.email" type="email" class="form-control" placeholder="Email">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-envelope" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <input asp-for="@Model.username" type="text" class="form-control" placeholder="Kullanıcı Adı">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <input asp-for="@Model.password" type="password" class="form-control" placeholder="Şifre">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <select asp-for="@Model.roleName" class="form-control text-center">
+                        <option selected disabled value="">--- Rol Seçin ---</option>
+                        @foreach (var item in Model.roles)
+                        {
+                            <option value="@item.Name">@item.Name</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="row">
+                    <!-- /.col -->
+                    <div class="col">
+                        <button type="submit" class="btn btn-danger btn-block">Kaydet</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <a asp-action="roleCreate" asp-controller="admin" class="btn btn-primary btn-block">Rol Ekle</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+</div>

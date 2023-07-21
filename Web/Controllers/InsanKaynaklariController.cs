@@ -8,6 +8,7 @@ using Business.Constant.DepartmentsCode;
 using Core.Constant;
 using Entities.Concrete;
 using Entities.Dto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Web.Models;
@@ -15,6 +16,7 @@ using Web.Models;
 namespace Web.Controllers
 {
     [Route("insankaynaklari")]
+    [Authorize(Roles = "IK,Admin")]
     public class InsanKaynaklariController : Controller
     {
         private readonly ILogger<InsanKaynaklariController> _logger;

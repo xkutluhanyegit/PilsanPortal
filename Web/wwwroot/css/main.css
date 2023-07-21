@@ -28,3 +28,8 @@
     background-color: #eeeeee;
     font-size: 13px;
 }
+
+#logout{
+    position: fixed;
+    bottom: 20px;
+}

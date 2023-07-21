@@ -15,6 +15,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/AccessDenied/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzRGVuaWVkXGluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Admin/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5caW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Admin/RoleCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUm9sZUNyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/AkuluMontaj/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWt1bHVNb250YWpcaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -495,6 +507,62 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRhcmlJc2xlclxzaGlmdF91cGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Idari_Isler/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRhcmlfSXNsZXJcaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Ihracat2/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWhyYWNhdDJcaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Ihracat2/nextweek_shift.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWhyYWNhdDJcbmV4dHdlZWtfc2hpZnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Ihracat2/nextweek_shift_add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWhyYWNhdDJcbmV4dHdlZWtfc2hpZnRfYWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Ihracat2/nextweek_shift_delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWhyYWNhdDJcbmV4dHdlZWtfc2hpZnRfZGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Ihracat2/nextweek_shift_update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWhyYWNhdDJcbmV4dHdlZWtfc2hpZnRfdXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Ihracat2/overtime.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWhyYWNhdDJcb3ZlcnRpbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Ihracat2/overtime_add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWhyYWNhdDJcb3ZlcnRpbWVfYWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Ihracat2/overtime_delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWhyYWNhdDJcb3ZlcnRpbWVfZGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Ihracat2/overtime_update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWhyYWNhdDJcb3ZlcnRpbWVfdXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Ihracat2/shift.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWhyYWNhdDJcc2hpZnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Ihracat2/shift_add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWhyYWNhdDJcc2hpZnRfYWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Ihracat2/shift_delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWhyYWNhdDJcc2hpZnRfZGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Ihracat2/shift_update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWhyYWNhdDJcc2hpZnRfdXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Ihracat/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWhyYWNhdFxpbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -805,6 +873,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/KaliteKontrol/shift_update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2FsaXRlS29udHJvbFxzaGlmdF91cGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Login/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5caW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/MalKabul/index.cshtml]
@@ -1171,6 +1243,58 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc2hhbmVcc2hpZnRfdXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Rotasyon/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YXN5b25caW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Rotasyon/nextweek_shift.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YXN5b25cbmV4dHdlZWtfc2hpZnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Rotasyon/nextweek_shift_add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YXN5b25cbmV4dHdlZWtfc2hpZnRfYWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Rotasyon/nextweek_shift_delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YXN5b25cbmV4dHdlZWtfc2hpZnRfZGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Rotasyon/nextweek_shift_update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YXN5b25cbmV4dHdlZWtfc2hpZnRfdXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Rotasyon/overtime.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YXN5b25cb3ZlcnRpbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Rotasyon/overtime_add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YXN5b25cb3ZlcnRpbWVfYWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Rotasyon/overtime_delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YXN5b25cb3ZlcnRpbWVfZGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Rotasyon/overtime_update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YXN5b25cb3ZlcnRpbWVfdXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Rotasyon/shift.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YXN5b25cc2hpZnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Rotasyon/shift_add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YXN5b25cc2hpZnRfYWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Rotasyon/shift_delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YXN5b25cc2hpZnRfZGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Rotasyon/shift_update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YXN5b25cc2hpZnRfdXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/SatinAlma/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2F0aW5BbG1hXGluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -1339,6 +1463,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Shared/_Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Shared/_StationView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdGF0aW9uVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -1401,6 +1529,58 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/Station/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlvblxpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/SurekliIyilestirme/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VyZWtsaUl5aWxlc3Rpcm1lXGluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/SurekliIyilestirme/nextweek_shift.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VyZWtsaUl5aWxlc3Rpcm1lXG5leHR3ZWVrX3NoaWZ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/SurekliIyilestirme/nextweek_shift_add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VyZWtsaUl5aWxlc3Rpcm1lXG5leHR3ZWVrX3NoaWZ0X2FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/SurekliIyilestirme/nextweek_shift_delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VyZWtsaUl5aWxlc3Rpcm1lXG5leHR3ZWVrX3NoaWZ0X2RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/SurekliIyilestirme/nextweek_shift_update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VyZWtsaUl5aWxlc3Rpcm1lXG5leHR3ZWVrX3NoaWZ0X3VwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/SurekliIyilestirme/overtime.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VyZWtsaUl5aWxlc3Rpcm1lXG92ZXJ0aW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/SurekliIyilestirme/overtime_add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VyZWtsaUl5aWxlc3Rpcm1lXG92ZXJ0aW1lX2FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/SurekliIyilestirme/overtime_delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VyZWtsaUl5aWxlc3Rpcm1lXG92ZXJ0aW1lX2RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/SurekliIyilestirme/overtime_update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VyZWtsaUl5aWxlc3Rpcm1lXG92ZXJ0aW1lX3VwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/SurekliIyilestirme/shift.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VyZWtsaUl5aWxlc3Rpcm1lXHNoaWZ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/SurekliIyilestirme/shift_add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VyZWtsaUl5aWxlc3Rpcm1lXHNoaWZ0X2FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/SurekliIyilestirme/shift_delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VyZWtsaUl5aWxlc3Rpcm1lXHNoaWZ0X2RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/SurekliIyilestirme/shift_update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VyZWtsaUl5aWxlc3Rpcm1lXHNoaWZ0X3VwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/kutluhan.yegit/Desktop/PilsanPortal/Web/Views/TeknikServis/index.cshtml]

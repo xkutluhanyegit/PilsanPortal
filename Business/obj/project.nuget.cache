@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "bRNw1O+Q89iVcZROZqa/Id6aXtPsphpTPabEa0fR0w8+jyv8wIU8k8xnLtYrvSVnCwb0+zoUwqrGw4EZDAEHYg==",
+  "dgSpecHash": "CYMKyeYDA6iNIq/llY3udsMkCeDPJzeSGlXJeJyelyZu+ANUl8mIH9O1/AeTLSejQdlv/0iVG1Q+Aox+fBOWcQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\kutluhan.yegit\\Desktop\\PilsanPortal\\Business\\Business.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.19\\microsoft.aspnetcore.cryptography.internal.6.0.19.nupkg.sha512",
+    "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.19\\microsoft.aspnetcore.cryptography.keyderivation.6.0.19.nupkg.sha512",
+    "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.19\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.19.nupkg.sha512",
     "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
@@ -17,6 +20,8 @@
     "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
     "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\microsoft.extensions.identity.core\\6.0.19\\microsoft.extensions.identity.core.6.0.19.nupkg.sha512",
+    "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\microsoft.extensions.identity.stores\\6.0.19\\microsoft.extensions.identity.stores.6.0.19.nupkg.sha512",
     "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\kutluhan.yegit\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",

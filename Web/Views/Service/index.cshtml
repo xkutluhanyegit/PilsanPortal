@@ -41,51 +41,59 @@
     </div>
 </div>
 
+@if (User.Identity.IsAuthenticated)
+{
+    if (User.IsInRole("Admin") || User.IsInRole("IK") || User.IsInRole("Idari-Isler"))
+    {
+        <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body">
 
-<div class="card">
-    <div class="card-header"></div>
-    <div class="card-body">
-
-        <table id="station-table" class="table">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Personel Ad Soyad</th>
-                    <th>Personel Servis</th>
-                    <th>Personel Durak</th>
-
-                </tr>
-            </thead>
-            <tbody>
-                @{
-                    int sayac = 1;
-                }
-                @foreach (var item in groupList)
-                {
-                    @foreach (var list in item)
-                    {
+                <table id="station-table" class="table">
+                    <thead>
                         <tr>
-                            <th>@sayac</th>
-                            <td>
-                                @list.Name @list.Surname
-                            </td>
-                            <td>@list.serviceName</td>
-                            <td>@list.stationName</td>
-                        </tr>
-                        sayac++;
-                    }
-                }
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th>#</th>
-                    <th>Personel Ad Soyad</th>
-                    <th>Personel Servis</th>
-                    <th>Personel Durak</th>
-                </tr>
-            </tfoot>
-        </table>
+                            <th>#</th>
+                            <th>Personel Ad Soyad</th>
+                            <th>Personel Servis</th>
+                            <th>Personel Durak</th>
 
-    </div>
-</div>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int sayac = 1;
+                        }
+                        @foreach (var item in groupList)
+                        {
+                            @foreach (var list in item)
+                            {
+                                <tr>
+                                    <th>@sayac</th>
+                                    <td>
+                                        @list.Name @list.Surname
+                                    </td>
+                                    <td>@list.serviceName</td>
+                                    <td>@list.stationName</td>
+                                </tr>
+                                sayac++;
+                            }
+                        }
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>#</th>
+                            <th>Personel Ad Soyad</th>
+                            <th>Personel Servis</th>
+                            <th>Personel Durak</th>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+        </div>
+
+
+    }
+}
+
 

@@ -5,6 +5,9 @@ C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Web.dl
 C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Web.deps.json
 C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Web.runtimeconfig.json
 C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Web.pdb
+C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Microsoft.Data.SqlClient.dll
 C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Microsoft.EntityFrameworkCore.dll
 C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -12,6 +15,8 @@ C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Micros
 C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Microsoft.Extensions.Identity.Core.dll
+C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Microsoft.Identity.Client.dll
 C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\kutluhan.yegit\Desktop\PilsanPortal\Web\bin\Debug\net6.0\publish\Microsoft.IdentityModel.Logging.dll
